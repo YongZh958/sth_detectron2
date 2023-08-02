@@ -1,0 +1,2 @@
+# sth_detectron2
+基于detectron2环境模型的环境配置
