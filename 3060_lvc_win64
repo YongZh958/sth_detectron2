@@ -1,3 +1,6 @@
 conda create -n lvc python=3.8
 // 使用的是1.10.0版本，镜像源是清华的conda源，win64分支！速度挺快的几分钟就下好了
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/win-64/
+// 下一步安装作者修改过的detectron2 的代码
+// 使用清华源pip install 速度快的飞起
+python -m pip install -e . -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com --default-timeout=100 alphabet
