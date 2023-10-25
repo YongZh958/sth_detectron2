@@ -1,0 +1,7 @@
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+把some-package替换为自己想要的包
+
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+如果报错，可能是因为pip版本不够（需≥10.0.0），先升级pip：
+pip install pip -U
+当然，升级pip本身也可以使用清华镜像源。
